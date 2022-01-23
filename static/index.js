@@ -341,11 +341,10 @@ function shareText(score) {
         return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
     }
     SubmitResults();
-    if (score <= 49) return '试着好好练一下？';
-    if (score <= 99) return 'TCL';
-    if (score <= 149) return 'TQL';
-    if (score <= 199) return '您';
-    return '人？';
+    if (score <= 49) return '翀皇写死了你的waifu';
+    if (score <= 99) return '又被背刺了';
+    if (score <= 149) return '更新世界的锋芒';
+    return '帝国上单';
 }
 
 function toStr(obj) {
@@ -408,7 +407,6 @@ function goRank() {
     }
     window.location.href=link;
 }
-console.log("不修改，好嘛？乱传又有什么用呢？(ˉ▽ˉ；)...")
 document.onkeydown = function (e) {
     if (e.keyCode == 123) {
         return false
